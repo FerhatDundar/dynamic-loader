@@ -1,0 +1,61 @@
+{
+    "version": "0.1.4",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=10"
+    },
+    "keywords": [
+        "dynamic",
+        "script",
+        "execution"
+    ],
+    "scripts": {
+        "start": "tsdx watch",
+        "build": "tsdx build",
+        "test": "tsdx test",
+        "lint": "tsdx lint",
+        "prepare": "tsdx build",
+        "size": "size-limit",
+        "analyze": "size-limit --why",
+        "exec": "ts-node ./src/index.ts"
+    },
+    "peerDependencies": {},
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsdx lint"
+        }
+    },
+    "prettier": {
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5"
+    },
+    "name": "@infxios/dynamic-loader",
+    "author": "Ferhat Dündar",
+    "module": "dist/dynamic-loader.esm.js",
+    "size-limit": [
+        {
+            "path": "dist/dynamic-loader.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/dynamic-loader.esm.js",
+            "limit": "10 KB"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/FerhatDundar/dynamic-loader/issues"
+    },
+    "homepage": "https://github.com/FerhatDundar/dynamic-loader#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FerhatDundar/dynamic-loader.git"
+    }
+}
