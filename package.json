@@ -25,7 +25,6 @@
         "analyze": "size-limit --why",
         "exec": "ts-node ./src/index.ts"
     },
-    "peerDependencies": {},
     "husky": {
         "hooks": {
             "pre-commit": "tsdx lint"
@@ -57,5 +56,8 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/FerhatDundar/dynamic-loader.git"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.30"
     }
 }
