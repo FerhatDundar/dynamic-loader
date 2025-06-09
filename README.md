@@ -1,3 +1,6 @@
+![NPM Version](https://img.shields.io/npm/v/%40infxios%2Fdynamic-loader)
+
+
 `dynamic-loader` helps you run desired `Typescript` or `Javascript` after loading the specified `npm` packages.
 
 - executeJavascript
